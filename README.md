@@ -1,7 +1,11 @@
 # Distributed Systems
 
 
-## Example Papers
-- [The Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
-- [MapReduce: Simplified Data Processing on Large Clusters](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
+## Documenting my learning of distributed systems and related concepts. 
+
+## 2025 
+- Goals:
+- Implement map reduce
+- Implement raft
+- Implement an etcd-like KV store
 
