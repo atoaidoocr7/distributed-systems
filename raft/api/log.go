@@ -6,9 +6,9 @@ import "errors"
 // inorder to be able to use them with golangs net/rpc pacakge. The net/rpc package requires fields to be
 // exported in order to encode and decode request parameters
 type LogEntry struct {
-	term  int64
-	index int64
-	data  []byte
+	Term  int64
+	Index int64
+	Data  []byte
 }
 
 type Log struct {
