@@ -2,6 +2,10 @@ package api
 
 import "errors"
 
+const (
+	initialCapacity = 50
+)
+
 // TODO(atoaidoocr7): Look into how we can make these fields private. For now, the fields must be public
 // inorder to be able to use them with golangs net/rpc pacakge. The net/rpc package requires fields to be
 // exported in order to encode and decode request parameters
@@ -13,6 +17,10 @@ type LogEntry struct {
 
 type Log struct {
 	entries []*LogEntry
+}
+
+func NewLog() *Log {
+	return &Log{entries: make([]*LogEntry, 0, initialCapacity)}
 }
 
 func (l *Log) AddEntry(entry *LogEntry) {
